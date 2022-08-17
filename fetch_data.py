@@ -6,7 +6,7 @@ import numpy as np
 
 def create_arrays(
     start_year=1960,
-    data_dir="./tennis_atp",
+    data_dir="../tennis_atp",
     include_qualifying_and_challengers=False,
     include_futures=False,
 ):
@@ -35,7 +35,7 @@ def create_arrays(
     }
 
 
-def get_pymc_model(start_year=1960, data_dir="./tennis_atp"):
+def get_pymc_model(start_year=1960, data_dir="../tennis_atp"):
 
     arrays = create_arrays(start_year=start_year, data_dir=data_dir)
 
